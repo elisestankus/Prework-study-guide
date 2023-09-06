@@ -19,36 +19,109 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
+          <li>HTML makes up the structure of a webpage</li>
+          <li>An element is a type of content on a webpage</li>
+          <ul>
+            <li>Elements are usually composed of an opening tag and a closing tag represented with angle brackets</li>
+          </ul>
+          <li>HTML attributes define additional information about an element</li>
+          <ul>
+            <li>HTML attributes are defined in the beginning element, not the closing element</li>
+          </ul>
+          <li>The head element contains information (metadata) about the webpage.</li>
+          <ul>
+            <li>Metadata contains information about accessibility, search engines, and performance</li>
+            <li>Metadata is not seen by users</li>
+          </ul>
+          <li>Some common metadata tags found in the head element include the title, style, base, link, meta, and script elements</li>
+          <ul>
+            <li>The title element defines the title of the webpage - used for Search Engine Optimization</li>
+            <li>The style element defines the CSS styles associated with the webpage</li>
+            <li>The base element defines the base URL for the webpage</li>
+            <li>The link element connects an external resource to the HTML document</li>
+            <li>The meta element defines metadata such as the character set, description, keywords, author, and viewport</li>
+            <li>The script element embeds client-side scripts in the HTML document</li>
+          </ul>
           <li>The body element represents the visible content shown to the user.</li>
-          <li>Add more HTML notes here</li>
+          <li>Common child elements within the body element include heading (h#), paragraph (p), unordered list (ul), ordered list (ol), list item (li), image (img), line break (br), and anchor (a) elements</li>
+          <li>Section elements are semantic elements that define a section in a document that contains thematic content. They allow us to organize content on our webpage.</li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>Cascading Style Sheets (CSS) is a programming language used to define style rules for elements of an HTML page and format them.</li>
+          <ul>
+            <li>CSS is used to define properties such as colors, aesthetics, visual layout, and organization</li>
+          </ul>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+          <ul>
+            <li>Inline CSS is used to style an element directly in the HTML file. Styles are applied using style attributes.</li>
+            <li>Internal style sheet contains CSS rules for the webpage in the head section of the HTML file. A single change to a CSS rule will apply to all tagged page elements.</li>
+            <li>External CSS style sheet is the preferred way to style a webpage because it allows developers to keep all of their CSS rules in a separate file. A link element in the HTML's head is used to link the external CSS sheet to the HTML page.</li>
+          </ul>
+          <li>A CSS rule consists of a selector and declarations</li>
+          <ul>
+            <li>The selector defines the element or attributes to which the declarations will apply</li>
+            <li>Declarations contain two components: the CSS property we want to apply and the value of the property</li>
+          </ul>
+          <li>An asterisk can be used as a selector to apply rules to all of the visible elements on the page</li>
+          <li>A CSS rule can be applied to multiple selectors by separating the selectors with a comma</li>
+          <li>CSS rules can be used to style text and images</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element</li>
-          <li>Add more CSS notes here</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector.</li>
         </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-         <li>git status: checks what branch we are currently on</li>
-         <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-         <li>Add more Git notes here</li>
+          <li>Git is a version control system that lets you manage and keep track of each version of your project</li>
+          <li>Git commands always start with "git"</li>
+          <li>git status: checks what branch we are currently on, shows modified files in working directory staged for your next commit</li>
+          <li>git add -A: adds all changes in the current working branch to the staging area</li>
+          <li>git commit -m "[descriptive message]": commit your staged content as a new commit snapshot</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git push [alias] (branch): transmit local branch commits to the remote repository branch</li>
+          <li>git pull: fetch and merge any commits from the tracking remote branch</li>
+          <ul>
+            <li>It is important to always do a git pull to make sure that you have the latest version of the project on your local computer before you start to work</li>
+          </ul>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
+          <li>JavaScript is a dynamic programming language that allows users to interact with websites</li>
+          <li>Each line of JavaScript code ends with a semicolon</li>
+          <li>JavaScript is case sensitive</li>
+          <li>Variables can hold values that have different data types including strings, numbers, Booleans, arrays, and objects</li>
+          <ul>
+            <li>String: sequence of text enclosed in single or double quote marks</li>
+            <li>Number: numbers don't have quotes around them</li>
+            <li>Boolean: true/false values, don't need quote marks</li>
+            <li>Array: structure that allows you to store multiple values in a single reference</li>
+            <li>Object: everything in JavaScript is an object and can be stored in a variable</li>
+          </ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
-          <li>Add more JavaScript notes here</li>
+          <li>Conditonal statements and loops can be used to control the order in which code is executes, or if it is even executed at all</li>
+          <li>If statements: code will only execute if the statement meets a condition, or is true.</li>
+          <ul>
+            <li>When a computer encounters an if statement in a JS file, it will check to see if the condition is truthy. If it is, then the computer will execute whatever action we ask it to do between the curly brackets</li>
+            <li>"else if" can be used if we have more than one condition</li>
+          </ul>
+          <li>For loops use the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over</li>
+          <li>A for loop consists of three statements: the starting point, the condition, and the statement that allows the array to iterate over each item</li>
+          <li>A function is a set of instructions that tells the computer how to perform a certain task</li>
+          <ul>
+            <li>Functions must be called by name in order to execute</li>
+            <li>A function's name is always followed by parentheses</li>
+            <li>The code to be executed is written inside curly brackets</li>
+          </ul>
         </ul>
       </section>
     </main>
